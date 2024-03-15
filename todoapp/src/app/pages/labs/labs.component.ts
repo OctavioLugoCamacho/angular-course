@@ -14,4 +14,7 @@ export class LabsComponent {
     'Aprendí a levantar el Server',
     'Estoy viendo cómo mostrar variables en el front'
   ]
+  name = 'Octavio';
+  age = 27;
+  
 }
