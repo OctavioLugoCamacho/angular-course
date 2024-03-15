@@ -16,5 +16,11 @@ export class LabsComponent {
   ]
   name = 'Octavio';
   age = 27;
-  
+  disabled = true;
+  img = 'https://w3schools.com/howto/img_avatar.png';
+  person = {
+    name: 'Octavio',
+    age: 27,
+    img: 'https://w3schools.com/howto/img_avatar.png'
+  }
 }
