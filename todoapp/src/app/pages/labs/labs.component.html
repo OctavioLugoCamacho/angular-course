@@ -1,18 +1,25 @@
-<h1>Esta es mi primer app en Angular</h1>
-<h2>{{welcome}}</h2>
-<ul>
-  @for (task of tasks; track tasks) {
-    <li>{{ task }}</li>
-      } @empty {
-    <li>There are no tasks.</li>
-  }
-</ul>
-<hr/>
-<h2>{{ 'Hola'.repeat(4) }}</h2>
-<p>La suma de 5 + 5 es: {{ 5+5 }}</p>
-<p>Hola soy {{ name }} y tengo {{ age }} años.</p>
-<hr/>
-<img [src]="person.img" alt="">
-<input type="number" [value]="person.age">
-<button [disabled]="disabled">Click me!</button>
-<p>Persona: {{ person.name }}</p>
+<div class="container">
+  <h1>Esta es mi primer app en Angular</h1>
+  <h2>{{welcome}}</h2>
+  <ul>
+    @for (task of tasks; track tasks) {
+      <li>{{ task }}</li>
+        } @empty {
+      <li>There are no tasks.</li>
+    }
+  </ul>
+  <hr/>
+  <h2>{{ 'Hola'.repeat(4) }}</h2>
+  <p>La suma de 5 + 5 es: {{ 5+5 }}</p>
+  <p>Hola soy {{ name }} y tengo {{ age }} años.</p>
+  <hr/>
+  <img [src]="person.img" alt="">
+  <input type="number" [value]="person.age">
+  <button [disabled]="disabled">Click me!</button>
+  <p>Persona: {{ person.name }}</p>
+  <hr/>
+  <button (click)="clickHandler()">Click me!</button>
+  <button (dblclick)="clickHandler()">Double me!</button>
+  <p>(change)</p>
+  <input type="number" [value]="person.age" (change)="changeHandler($event)">
+</div>
